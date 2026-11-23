@@ -1,0 +1,62 @@
+{
+  "manifestVersion": 1,
+  "name": "nuvio-scrapers",
+  "version": "1.0.0",
+  "description": "hydrahd and laroza scrapers for the nuvio app. each site resolves its own live domain before scraping.",
+  "providers": [
+    {
+      "id": "hydrahd",
+      "name": "HydraHD",
+      "description": "hydrahd movies and series. resolves the live domain from hydrahd.info, pulls the server list from the site ajax layer, and resolves embeds to direct m3u8/mp4 links.",
+      "version": "1.0.0",
+      "author": "b0dr7",
+      "supportedTypes": ["movie", "tv"],
+      "filename": "providers/hydrahd.js",
+      "enabled": true,
+      "formats": ["m3u8", "mp4"],
+      "logo": "https://www.google.com/s2/favicons?domain=hydrahd.gd&sz=128",
+      "contentLanguage": ["en"]
+    },
+    {
+      "id": "laroza",
+      "name": "Laroza",
+      "description": "laroza movies and series (arabic subtitles/dubs). follows the laroza.to redirect to the current live domain, searches by title, and resolves the packed player to a direct m3u8 link.",
+      "version": "1.0.0",
+      "author": "b0dr7",
+      "supportedTypes": ["movie", "tv"],
+      "filename": "providers/laroza.js",
+      "enabled": true,
+      "formats": ["m3u8", "mp4"],
+      "logo": "https://www.google.com/s2/favicons?domain=laroza.to&sz=128",
+      "contentLanguage": ["ar", "en"]
+    }
+  ],
+  "scrapers": [
+    {
+      "id": "hydrahd",
+      "name": "HydraHD",
+      "description": "hydrahd movies and series. resolves the live domain from hydrahd.info, pulls the server list from the site ajax layer, and resolves embeds to direct m3u8/mp4 links.",
+      "version": "1.0.0",
+      "author": "b0dr7",
+      "supportedTypes": ["movie", "tv"],
+      "filename": "providers/hydrahd.js",
+      "enabled": true,
+      "formats": ["m3u8", "mp4"],
+      "logo": "https://www.google.com/s2/favicons?domain=hydrahd.gd&sz=128",
+      "contentLanguage": ["en"]
+    },
+    {
+      "id": "laroza",
+      "name": "Laroza",
+      "description": "laroza movies and series (arabic subtitles/dubs). follows the laroza.to redirect to the current live domain, searches by title, and resolves the packed player to a direct m3u8/mp4 link.",
+      "version": "1.0.0",
+      "author": "b0dr7",
+      "supportedTypes": ["movie", "tv"],
+      "filename": "providers/laroza.js",
+      "enabled": true,
+      "formats": ["m3u8", "mp4"],
+      "logo": "https://www.google.com/s2/favicons?domain=laroza.to&sz=128",
+      "contentLanguage": ["ar", "en"]
+    }
+  ]
+}
